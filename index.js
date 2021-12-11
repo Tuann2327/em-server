@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const express = require('express')
-const uri = "mongodb+srv://jkenzkul:27101999@cluster0.jtsbw.mongodb.net/ecomTest?retryWrites=true&w=majority";
+const uri = "mongodb+srv://useruser:123123@cluster0.jtsbw.mongodb.net/ecomTest?retryWrites=true&w=majority";
 mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true});
 const app = express()
 app.use(function(req, res, next) {
@@ -17,7 +17,7 @@ const port = 5050
 //route
 const AccountRoutes = require('./routes/account')(app)
 const ItemRoutes = require('./routes/item')(app)
-//
+
 
 app.listen(port,()=>{
     console.log('my app is running')
